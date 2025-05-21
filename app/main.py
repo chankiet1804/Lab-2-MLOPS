@@ -5,7 +5,7 @@ from joblib import load
 app = FastAPI()
 
 # Load full pipeline (vectorizer + model)
-model = load("model/model.joblib")
+model = load("model/best_sklearn_model_LR_CountVec_Stm.joblib")
 
 class TextInput(BaseModel):
     text: str
